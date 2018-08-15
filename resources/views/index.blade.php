@@ -50,6 +50,7 @@
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
+                @if($first_post)
                 <article class="hentry post post-standard has-post-thumbnail sticky">
 
                         <div class="post-thumb">
@@ -98,12 +99,17 @@
                         </div>
 
                 </article>
+                @else
+                {{-- <h1 class="text-center">Currently No Post to show</h1> --}}
+                <h4><a href="{{ route('login') }}" class="text-center">Click here to add post</a></h4>
+                @endif
             </div>
             <div class="col-lg-2"></div>
         </div>
 
         <div class="row">
             <div class="col-lg-6">
+                @if($second_post)
                 <article class="hentry post post-standard has-post-thumbnail sticky">
 
                         <div class="post-thumb">
@@ -122,7 +128,7 @@
                             <div class="post__content-info">
 
                                     <h2 class="post__title entry-title ">
-                                        <a href="15_blog_details.html">{{ $second_post->title }}</a>
+                                        <a href="{{ route('single',['slug'=>$second_post->slug]) }}">{{ $second_post->title }}</a>
                                     </h2>
 
                                     <div class="post-additional-info">
@@ -152,8 +158,13 @@
                         </div>
 
                 </article>
+                @else
+                {{-- <h1 class="text-center">Currently No post to show</h1> --}}
+                {{-- <h4><a href="{{ route('login') }}" class="text-center">Click here to add post</a></h4> --}}
+                @endif
             </div>
             <div class="col-lg-6">
+                @if($third_post)
                 <article class="hentry post post-standard has-post-thumbnail sticky">
 
                         <div class="post-thumb">
@@ -172,7 +183,7 @@
                             <div class="post__content-info">
 
                                     <h2 class="post__title entry-title ">
-                                        <a href="15_blog_details.html">{{ $third_post->title }}</a>
+                                        <a href="{{ route('single',['slug'=>$third_post->slug]) }}">{{ $third_post->title }}</a>
                                     </h2>
 
                                     <div class="post-additional-info">
@@ -202,6 +213,10 @@
                         </div>
 
                 </article>
+                @else
+                {{-- <h1 class="text-center">Currently No post to how</h1> --}}
+                {{-- <h4><a href="{{ route('login') }}" class="text-center">Click here to add post</a></h4> --}}
+                @endif
             </div>
         </div>
     </div>

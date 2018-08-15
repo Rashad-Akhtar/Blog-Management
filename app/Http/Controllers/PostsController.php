@@ -72,7 +72,7 @@ class PostsController extends Controller
 
         $post->tags()->attach($request->tags);
 
-        return redirect()->back();
+        return redirect()->route('post.index');
     }
 
     /**
@@ -175,6 +175,7 @@ class PostsController extends Controller
     public function delete($id)
     {
         $post=Post::withTrashed()->where('id',$id)->first();
+
 
         $post->forcedelete();
 

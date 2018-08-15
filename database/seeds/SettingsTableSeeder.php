@@ -13,7 +13,7 @@ class SettingsTableSeeder extends Seeder
     {
         \App\Setting::create([
 
-            'site_name' => "Laravel's Blog",
+            'site_name' => "Rashad's Blog",
             'contact_email' => 'info@laravel.com',
             'contact_number' => '2937898574895',
             'address' => 'Dhaka,Bangladesh'
