@@ -14,7 +14,7 @@
 <p><b> Step - 3 :- </b> Go to your directory where your downloaded or cloned project is located . Open your terminal there . Gitbash terminal is preferred . Now run this command :- </p>
 
 ```
-php artisan migrate:refresh 
+php artisan migrate 
 ```
 
 <p><b> Step - 4 :- </b>Now run this command in your terminal :-  </p>
