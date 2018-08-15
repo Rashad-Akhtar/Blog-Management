@@ -2,7 +2,7 @@
 
 ## Description
 
-<p>It's an blog content management application . The admin of this application can create different blogs . Admin can update and delete blogs . The visitor part off this application maintains a good user interface . Visitors will be able to search blogs category-wise . Every blog contains various informations about that blog . </p>
+<p>It's an blog content management application . The admin of this application can create different blogs . Admin can update and delete blogs . The visitor part of this application maintains a good user interface . Visitors will be able to search blogs category-wise . Every blog contains various informations about that blog . </p>
 <br>
 
 ## How To Run This Project
